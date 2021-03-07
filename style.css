@@ -131,5 +131,6 @@ table {
 img{
   border-radius: 11px;
   max-height: 90vh;
+  max-width: 90vw;
   justify-content: center;
 }
