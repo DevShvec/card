@@ -6,33 +6,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Card</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<div id="pagepiling">
-		<div class="section" id="slide_1">
+		<div class="section" id="firstPage">
 			<img src="sert/UITFE.jpg" alt="Ukrainian IT school (frontend)">
 		</div>
-		<div class="section" id="slide_2">
+		<div class="section" id="secondPage">
 			<img src="sert/UITJS.jpg" alt="Ukrainian IT school (javascript)">
 		</div>
-		<div class="section" id="slide_3">
+		<div class="section" id="thirdPage">
 			<img src="sert/TestHTML.jpg" alt="test (html)">
 		</div>
-		<div class="section" id="slide_4">
-			<img src="sert/TestCSS.jpg" alt="test (css)">
+		<div class="section" id="fourthPage">
+			<img id="asa" src="sert/TestCSS.jpg" alt="test (css)">
 		</div>
-		<div class="section" id="slide_5">
+		<div class="section" id="fifthPage">
 			<img src="sert/TestJS.jpg" alt="test (js)">
 		</div>
-		<div class="section" id="slide_6">
+		<div class="section" id="sixthPage">
 			<img src="sert/TestTutJS.jpg" alt="test (js)">
 		</div>
-		<div class="section" id="slide_7">
+		<div class="section" id="seventhPage">
 			<img src="sert/TestVUE.jpg" alt="Utest (vue.js)">
 		</div>
 	</div>
@@ -41,6 +41,7 @@
 	<script>
 		$(document).ready(function () {
 			$('#pagepiling').pagepiling({
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage'],
 				sectionsColor: ['#BFDCC0', '#BFDCC0', '#E9E98D', '#A1BFF8', '#E9E98D', '#A1BFF8', '#BFDCC0'],
 			});
 		});
